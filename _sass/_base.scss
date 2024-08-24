@@ -167,3 +167,30 @@ figcaption {
   margin-right: 200px; /* Optional: Add some space to the right if needed */
   margin-left: 1000px;
 }
+
+/* Media query for smaller screens (mobile) */
+@media (max-width: 600px) {
+  .site-description {
+    text-align: center; /* Center-align for mobile screens */
+    font-size: 1.2em; /* Adjust font size for better readability */
+    margin-right: 0; /* Remove right margin for mobile */
+  }
+
+  h1, h3 {
+    font-size: 1.8em; /* Reduce size of h1 and h3 on mobile for better fit */
+  }
+
+  .site-masthead {
+    padding: 10px 15px; /* Add padding for spacing on mobile */
+  }
+
+  .post-list {
+    padding: 0; /* Adjust list padding for mobile */
+  }
+
+  /* Optional: Make navigation or other elements responsive */
+  .menu {
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+  }
+}
