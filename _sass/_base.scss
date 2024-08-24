@@ -168,22 +168,52 @@ figcaption {
   margin-left: 1000px;
 }
 
-/* Style for the custom button */
+// /* Style for the custom button */
+// /.custom-button {
+//   display: inline-block; /* Ensures the button only takes up the space of the image */
+//   padding: 0; /* Remove any extra padding */
+//   margin: 0; /* Remove any extra margin */
+//   text-align: left; /* Center the image */
+// }
+
+// /* Style the image inside the button */
+// .custom-button img {
+//   width: 100px; /* Adjust the width of the icon */
+//   height: auto; /* Automatically adjust the height based on the width */
+//   cursor: pointer; /* Show the pointer cursor when hovering over the image */
+// }
+
+// /* Optional hover effect for the button */
+// .custom-button:hover img {
+//   opacity: 0.8; /* Slight opacity change when hovering */
+// }
+
+/* Common styles for all buttons */
 .custom-button {
-  display: inline-block; /* Ensures the button only takes up the space of the image */
-  padding: 0; /* Remove any extra padding */
-  margin: 0; /* Remove any extra margin */
-  text-align: left; /* Center the image */
+  display: inline-block;
+  position: absolute; /* Absolute positioning for custom placement */
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
 
-/* Style the image inside the button */
+/* Style for the headphones button */
+#musicbutton {
+  top: 300px; /* Adjust this value to place it correctly on your page */
+  left: 50%;
+  transform: translateX(-50%); /* Center the headphones button */
+}
+
+/* Style for the second button */
+#aryanbutton {
+  top: 200px; /* Adjust this value to place it below the word "Quyên" */
+  left: 50%;
+  transform: translateX(-50%); /* Center the second button relative to the page */
+}
+
+/* Adjust the image size inside the buttons */
 .custom-button img {
-  width: 100px; /* Adjust the width of the icon */
-  height: auto; /* Automatically adjust the height based on the width */
-  cursor: pointer; /* Show the pointer cursor when hovering over the image */
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
 }
 
-/* Optional hover effect for the button */
-.custom-button:hover img {
-  opacity: 0.8; /* Slight opacity change when hovering */
-}
