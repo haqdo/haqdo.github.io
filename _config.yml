@@ -16,7 +16,7 @@
 title: Hạ Quyên Đỗ
 email: hado@uchicago.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  is an undergraduate at the University of Chicago majoring in Astrophysics alongside Race, Diaspora, and Indigeneity. Her studies in these fields focus on the cosmology of our local universe, expression of identity through the arts, and navigating racial solidarity.
+  is an undergraduate at the University of Chicago majoring in Astrophysics alongside Race, Diaspora, and Indigeneity. In her ongoing exploration of these fields, she is particularly interested in studying the cosmology of our local universe, expression of identity through the arts, and navigating racial solidarity.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://haqdo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #icon: /assets/images/icon-512.png
