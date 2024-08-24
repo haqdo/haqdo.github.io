@@ -164,27 +164,28 @@ figcaption {
 .description-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Aligns items at the start */
+  position: relative;
+  margin-left: 200px; /* Adjust the margin to ensure visibility */
 }
 
 /* Style for the button */
 .custom-button {
   display: inline-block;
-  padding: 0;
-  margin: 0;
+  margin-right: 10px; /* Add a small gap between the button and description */
+  cursor: pointer;
 }
 
 /* Style for the image inside the button */
 .custom-button img {
-  width: 100px;
+  width: 40px; /* Adjust the size of the icon */
   height: auto;
-  cursor: pointer;
 }
 
 /* Style for site description */
 .site-description {
   text-align: left;
-  font-size: inherit;
-  margin-left: 1000px; /* Keep the large left margin */
-  margin-right: 200px; /* Add right space */
+  font-size: inherit; /* Keep the h3 font size */
+  margin-left: 0; /* Reset the large left margin */
+  margin-right: 200px; /* Optional: Keep some space to the right */
 }
