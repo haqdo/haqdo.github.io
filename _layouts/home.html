@@ -7,19 +7,25 @@ layout: default
 {% elsif site.paginate and site.paginate_path and paginator.page > 1 %}
   {% include back-link.html %}
 {% else %}
-  <header class="site-masthead">
-    {% include menu.html %}
-    {% if site.title %}
-      <h1>
-        {{ site.title }}
-      </h1>
-    {% endif %}
-    {% if site.title %}
-      <h3 class="site-description">
-        {{ site.description }}
-      </h3>
-    {% endif %}
-  </header>
+<header class="site-masthead">
+  {% include menu.html %}
+  {% if site.title %}
+    <h1>
+      {{ site.title }}
+    </h1>
+  {% endif %}
+  {% if site.description %}
+    <h3 class="site-description">
+      {{ site.description }}
+    </h3>
+  {% endif %}
+  
+  <!-- Add button with custom icon -->
+  <a href="https://externalsite.com" class="custom-button">
+    <img src="{{ '/assets/images/image.png' | absolute_url }}" alt="Custom Icon" />
+  </a>
+
+</header>
 {% endif %}
 
 <main class="home" id="main" role="main" aria-label="Content">
