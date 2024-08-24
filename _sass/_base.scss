@@ -160,32 +160,30 @@ figcaption {
   }
 }
 
-/* Flex container to align the button and description */
-.description-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Aligns items at the start */
-  position: relative;
-  margin-left: 200px; /* Adjust the margin to ensure visibility */
-}
-
-/* Style for the button */
-.custom-button {
-  display: inline-block;
-  margin-right: 0px; /* Add a small gap between the button and description */
-  cursor: pointer;
-}
-
-/* Style for the image inside the button */
-.custom-button img {
-  width: 200px; /* Adjust the size of the icon */
-  height: auto;
-}
-
 /* Style for site description */
 .site-description {
-  text-align: left;
-  font-size: inherit; /* Keep the h3 font size */
-  margin-left: 1000px; /* Reset the large left margin */
-  margin-right: 200px; /* Optional: Keep some space to the right */
+  text-align: left; /* Right align the text */
+  font-size: inherit; /* Keep the default h3 font size */
+  margin-right: 200px; /* Optional: Add some space to the right if needed */
+  margin-left: 1000px;
+}
+
+/* Style for the custom button */
+.custom-button {
+  display: inline-block; /* Ensures the button only takes up the space of the image */
+  padding: 0; /* Remove any extra padding */
+  margin: 0; /* Remove any extra margin */
+  text-align: left; /* Center the image */
+}
+
+/* Style the image inside the button */
+.custom-button img {
+  width: 100px; /* Adjust the width of the icon */
+  height: auto; /* Automatically adjust the height based on the width */
+  cursor: pointer; /* Show the pointer cursor when hovering over the image */
+}
+
+/* Optional hover effect for the button */
+.custom-button:hover img {
+  opacity: 0.8; /* Slight opacity change when hovering */
 }
