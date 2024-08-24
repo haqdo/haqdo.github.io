@@ -164,8 +164,9 @@ figcaption {
 .site-description {
   text-align: right; /* Right align the text */
   font-size: inherit; /* Keep the default h3 font size */
-  margin-right: 200px; /* Optional: Add some space to the right if needed */
-  margin-left: 1200px;
+  margin-right: 150px; /* Optional: Add some space to the right if needed */
+  margin-left: 1300px;
+  top: 450px;
 }
 
 /* Use absolute positioning for the image */
@@ -174,7 +175,7 @@ figcaption {
   height: auto;
   position: absolute;
   left: 500px; /* Position the image 120px to the right of the h1 */
-  top: 450px; /* Vertically center the image relative to the h1 */
+  top: 455px; /* Vertically center the image relative to the h1 */
   transform: translateY(-50%); /* Adjust for vertical centering */
 }
 
