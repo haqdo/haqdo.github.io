@@ -12,8 +12,6 @@ title: Hạ's CV
     .pdf-container {
       display: flex;
       justify-content: center; /* Horizontally centers the PDF */
-      align-items: center; /* Vertically centers the PDF if needed */
-      min-height: 100vh; /* Full viewport height for vertical centering */
     }
   </style>
 </head>
