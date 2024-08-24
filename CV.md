@@ -8,19 +8,18 @@ title: Hạ's CV
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Center the PDF using text-align */
+    /* Flexbox to center the embedded PDF */
     .pdf-container {
-      text-align: center;
-    }
-
-    .pdf-container object {
-      display: inline-block;
+      display: flex;
+      justify-content: center; /* Horizontally centers the PDF */
+      align-items: center; /* Vertically centers the PDF if needed */
+      min-height: 100vh; /* Full viewport height for vertical centering */
     }
   </style>
 </head>
 <body>
 
-  <!-- Center the PDF using text-align -->
+  <!-- Center the PDF using Flexbox -->
   <div class="pdf-container">
     <object data="/assets/CV.pdf" type="application/pdf" width="750" height="800">
       <p>It appears you don't have a PDF plugin for this browser. You can <a href="/assets/pdfs/my-document.pdf">click here to download the PDF</a>.</p>
