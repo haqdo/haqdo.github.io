@@ -170,10 +170,10 @@ figcaption {
 
 /* Use absolute positioning for the image */
 .portrait-image {
-  width: 1000px; /* Adjust the image size */
+  width: 800px; /* Adjust the image size */
   height: auto;
   position: absolute;
-  left: 300px; /* Position the image 120px to the right of the h1 */
+  left: 400px; /* Position the image 120px to the right of the h1 */
   top: 400px; /* Vertically center the image relative to the h1 */
   transform: translateY(-50%); /* Adjust for vertical centering */
 }
