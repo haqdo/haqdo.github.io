@@ -199,21 +199,22 @@ figcaption {
 
 /* Style for the headphones button */
 #musicbutton {
-  top: 300px; /* Adjust this value to place it correctly on your page */
-  left: 50%;
+  top: 400px; /* Adjust this value to place it correctly on your page */
+  left: 40%;
+  width: 200px; /* Adjust the size as needed */
   transform: translateX(-50%); /* Center the headphones button */
 }
 
 /* Style for the second button */
 #aryanbutton {
   top: 200px; /* Adjust this value to place it below the word "Quyên" */
-  left: 50%;
+  left: 30%;
+  width: 100px; /* Adjust the size as needed */
   transform: translateX(-50%); /* Center the second button relative to the page */
 }
 
 /* Adjust the image size inside the buttons */
 .custom-button img {
-  width: 200px; /* Adjust the size as needed */
   height: auto;
 }
 
