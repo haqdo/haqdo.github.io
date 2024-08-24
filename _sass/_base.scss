@@ -168,3 +168,23 @@ figcaption {
   margin-left: 1000px;
 }
 
+/* Style for the custom button */
+.custom-button {
+  display: block;
+  margin: 0 auto; /* Center the button horizontally */
+  position: relative; /* Position it under the word "Ha" */
+  top: -50px; /* Adjust this value as necessary */
+  text-align: center; /* Center the image inside the button */
+  padding: 10px;
+}
+
+.custom-button img {
+  width: 40px; /* Adjust size of the icon */
+  height: auto;
+  cursor: pointer;
+}
+
+.custom-button:hover img {
+  opacity: 0.8; /* Add hover effect */
+}
+
