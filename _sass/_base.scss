@@ -173,7 +173,8 @@ figcaption {
   display: inline-block; /* Ensures the button only takes up the space of the image */
   padding: 0; /* Remove any extra padding */
   margin: 0; /* Remove any extra margin */
-  text-align: center; /* Center the image */
+  text-align: left; /* Center the image */
+  margin-left: 500px
 }
 
 /* Style the image inside the button */
