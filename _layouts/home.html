@@ -14,19 +14,19 @@ layout: default
       {{ site.title }}
     </h1>
   {% endif %}
-
-  <!-- Flex container for button and description -->
-  <div class="description-container">
-    <a href="https://open.spotify.com/playlist/37i9dQZF1EP6YuccBxUcC1?si=d4781aac8cf64a09" class="custom-button">
-      <img src="{{ 'assets/images/button.png' | absolute_url }}" alt="Custom Icon" />
-    </a>
+  {% if site.description %}
     <h3 class="site-description">
       {{ site.description }}
     </h3>
-  </div>
+  {% endif %}
+  
+  <!-- Add button with custom icon -->
+  <a href="https://open.spotify.com/playlist/37i9dQZF1EP6YuccBxUcC1?si=d4781aac8cf64a09" class="custom-button">
+    <img src="{{ '/assets/images/button.png' | absolute_url }}" alt="Custom Icon" />
+  </a>
+
 </header>
 {% endif %}
-
 
 <main class="home" id="main" role="main" aria-label="Content">
 
