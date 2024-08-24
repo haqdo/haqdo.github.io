@@ -19,7 +19,7 @@ title: Hạ's CV
 
   <!-- Center the PDF using Flexbox -->
   <div class="pdf-container">
-    <object data="/assets/CV.pdf" type="application/pdf" width="900" height="1000">
+    <object data="/assets/CV.pdf" type="application/pdf" width="1100" height="1200">
       <p>It appears you don't have a PDF plugin for this browser. You can <a href="/assets/CV.pdf">click here to download the PDF</a>.</p>
     </object>
   </div>
