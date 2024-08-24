@@ -172,7 +172,7 @@ figcaption {
 /* Style for the button */
 .custom-button {
   display: inline-block;
-  margin-right: 10px; /* Add a small gap between the button and description */
+  margin-right: 0px; /* Add a small gap between the button and description */
   cursor: pointer;
 }
 
@@ -186,6 +186,6 @@ figcaption {
 .site-description {
   text-align: left;
   font-size: inherit; /* Keep the h3 font size */
-  margin-left: 500px; /* Reset the large left margin */
+  margin-left: 1000px; /* Reset the large left margin */
   margin-right: 200px; /* Optional: Keep some space to the right */
 }
