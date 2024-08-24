@@ -3,12 +3,10 @@ layout: post
 title: CV
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
 </head>
 <body>
 
@@ -16,7 +14,7 @@ title: CV
   <p>Hello! I'm a web developer and astrophysics enthusiast.</p>
 
   <!-- Embed the PDF using the object tag -->
-  <object data="/assets/CV.pdf" type="application/pdf" width="100%" height="100%">
+  <object data="/assets/CV.pdf" type="application/pdf" width="100%" height="600px">
     <p>It appears you don't have a PDF plugin for this browser. You can <a href="/assets/pdfs/my-document.pdf">click here to download the PDF</a>.</p>
   </object>
 
