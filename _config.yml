@@ -13,8 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hạ 
-Quyên Đỗ
+title: Hạ Quyên Đỗ
 email: hado@uchicago.edu
 description: >- # this means to ignore newlines until "baseurl:"
   is an undergraduate researcher at the University of Chicago majoring in Astrophysics alongside Race, Diaspora, and Indigeneity. In her ongoing exploration of these fields, she is particularly interested in the cosmology of our local universe, expression of identity through the arts, and navigating racial solidarity.
