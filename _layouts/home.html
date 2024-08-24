@@ -9,11 +9,20 @@ layout: default
 {% else %}
 <header class="site-masthead">
   {% include menu.html %}
-  {% if site.title %}
-    <h1>
-      {{ site.title }}
-    </h1>
-  {% endif %}
+  
+  <div class="title-container">
+    <!-- Add the image next to the title -->
+    <img src="{{ '/assets/images/portrait.png' | absolute_url }}" alt="Portrait" class="portrait-image">
+    
+    <!-- Title text -->
+    {% if site.title %}
+      <h1>
+        {{ site.title }}
+      </h1>
+    {% endif %}
+  </div>
+
+  <!-- Description -->
   {% if site.description %}
     <h3 class="site-description">
       {{ site.description }}
@@ -26,7 +35,7 @@ layout: default
   </a>
   
   <!-- Add button with custom icon -->
-  <a href="https://open.spotify.com/playlist/37i9dQZF1EP6YuccBxUcC1?si=d4781aac8cf64a09" class="custom-button" id = "musicbutton">
+  <a href="https://open.spotify.com/playlist/37i9dQZF1EP6YuccBxUcC1?si=d4781aac8cf64a09" class="custom-button" id="musicbutton">
     <img src="{{ '/assets/images/button.png' | absolute_url }}" alt="music button" />
   </a>
 
