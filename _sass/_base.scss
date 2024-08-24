@@ -170,21 +170,20 @@ figcaption {
 
 /* Style for the custom button */
 .custom-button {
-  display: block;
-  margin: 0 auto; /* Center the button horizontally */
-  position: relative; /* Position it under the word "Ha" */
-  top: -50px; /* Adjust this value as necessary */
-  text-align: center; /* Center the image inside the button */
-  padding: 10px;
+  display: inline-block; /* Ensures the button only takes up the space of the image */
+  padding: 0; /* Remove any extra padding */
+  margin: 0; /* Remove any extra margin */
+  text-align: center; /* Center the image */
 }
 
+/* Style the image inside the button */
 .custom-button img {
-  width: 80px; /* Adjust size of the icon */
-  height: auto;
-  cursor: pointer;
+  width: 100px; /* Adjust the width of the icon */
+  height: auto; /* Automatically adjust the height based on the width */
+  cursor: pointer; /* Show the pointer cursor when hovering over the image */
 }
 
+/* Optional hover effect for the button */
 .custom-button:hover img {
-  opacity: 0.8; /* Add hover effect */
+  opacity: 0.8; /* Slight opacity change when hovering */
 }
-
