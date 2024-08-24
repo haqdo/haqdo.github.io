@@ -11,7 +11,7 @@ title: Hạ's CV
 <body>
 
   <!-- Embed the PDF using the object tag -->
-  <object data="/assets/CV.pdf" type="application/pdf" width="100%" height="100%">
+  <object data="/assets/CV.pdf" type="application/pdf" width="500" height="800">
     <p>It appears you don't have a PDF plugin for this browser. You can <a href="/assets/pdfs/my-document.pdf">click here to download the PDF</a>.</p>
   </object>
 
