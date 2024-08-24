@@ -121,7 +121,7 @@ figcaption {
 .content-title {
   font-size: 2em;
   margin-bottom: 2em;
-  text-align: center;
+  text-align: right;
 }
 
 .post-date {
@@ -174,7 +174,7 @@ figcaption {
   height: auto;
   position: absolute;
   left: 500px; /* Position the image 120px to the right of the h1 */
-  top: 500px; /* Vertically center the image relative to the h1 */
+  top: 450px; /* Vertically center the image relative to the h1 */
   transform: translateY(-50%); /* Adjust for vertical centering */
 }
 
@@ -190,7 +190,7 @@ figcaption {
 /* Style for the headphones button */
 #musicbutton {
   top: 400px; /* Adjust this value to place it correctly on your page */
-  left: 40%;
+  left: 30%;
   width: 200px; /* Adjust the size as needed */
   transform: translateX(-50%); /* Center the headphones button */
 }
