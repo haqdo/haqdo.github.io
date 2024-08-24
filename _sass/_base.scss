@@ -160,33 +160,27 @@ figcaption {
   }
 }
 
+/* Flex container to align the image and title */
+.title-container {
+  display: flex;
+  align-items: center; /* Vertically aligns the image and title */
+  gap: 20px; /* Add space between the image and the title */
+}
+
+/* Style the image */
+.portrait-image {
+  width: 100px; /* Adjust the image size */
+  height: auto;
+  border-radius: 50%; /* Optional: make the image circular */
+}
+
 /* Style for site description */
 .site-description {
-  text-align: left; /* Right align the text */
+  text-align: left; /* Left align the text */
   font-size: inherit; /* Keep the default h3 font size */
   margin-right: 200px; /* Optional: Add some space to the right if needed */
   margin-left: 1000px;
 }
-
-// /* Style for the custom button */
-// /.custom-button {
-//   display: inline-block; /* Ensures the button only takes up the space of the image */
-//   padding: 0; /* Remove any extra padding */
-//   margin: 0; /* Remove any extra margin */
-//   text-align: left; /* Center the image */
-// }
-
-// /* Style the image inside the button */
-// .custom-button img {
-//   width: 100px; /* Adjust the width of the icon */
-//   height: auto; /* Automatically adjust the height based on the width */
-//   cursor: pointer; /* Show the pointer cursor when hovering over the image */
-// }
-
-// /* Optional hover effect for the button */
-// .custom-button:hover img {
-//   opacity: 0.8; /* Slight opacity change when hovering */
-// }
 
 /* Common styles for all buttons */
 .custom-button {
@@ -217,4 +211,3 @@ figcaption {
 .custom-button img {
   height: auto;
 }
-
