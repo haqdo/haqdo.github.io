@@ -10,7 +10,7 @@ h1 {
   font-size: 3em;
   margin: .5em auto;
   text-align: center;
-  top: 150px;
+  top: 100px;
 }
 
 h2 {
@@ -166,8 +166,9 @@ figcaption {
 .site-description {
   text-align: left; /* Right align the text */
   font-size: inherit; /* Keep the default h3 font size */
-  margin-right: 100px; /* Optional: Add some space to the right if needed */
-  margin-left: 1350px;
+  /* margin-right: 100px; /* Optional: Add some space to the right if needed */
+  /* margin-left: 1350px; */
+  left: 50%;
   top: 450px;
 }
 
