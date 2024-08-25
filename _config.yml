@@ -17,7 +17,7 @@ title: Hạ Quyên Đỗ
 email: hado@uchicago.edu
 description: # this means to ignore newlines until "baseurl:"
 Hạ is an undergraduate researcher at the University of Chicago studying Astrophysics as well as Race, Diaspora, and Indigeneity. In her ongoing exploration of these fields, she is particularly interested in the cosmology of our local universe, the expression of identity through the arts, and navigating racial solidarity.
-Currently, Hạ is working on a paper that examines the use of photometric metallicity to study perturbations in stellar streams, with the broader goal of exploring how dark matter subhalos interact with baryonic matter. You can find her academic information in the naviation bar above. In her free time, Hạ occasionally dabbles in writing, taking mediocre photos, and curating Spotify playlists which can be accessed in the buttons to the left. Her favorite colors are light blue and dark red, if you can't already tell.
+Currently, Hạ is working on a paper that examines the use of photometric metallicity to study perturbations in stellar streams, with the broader goal of understanding how dark matter subhalos interact with baryonic matter. You can find her academic information in the naviation bar above. In her free time, Hạ occasionally dabbles in writing, taking mediocre photos, and curating Spotify playlists which can be accessed in the buttons to the left. Her favorite colors are light blue and dark red, if you can't already tell.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://haqdo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #icon: /assets/images/icon-512.png
