@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: post
 title: My Writing
 ---
 
 # My Writing
 
-Here is a list of my articles and writing displayed on other pages:
+Her's a list of stuff I've written--short stories, poems, essays--that I felt cute about but might delete later:
 
-- [Post 1: My First Article](/post1.html)
-- [Post 2: Another Article](/post2.html)
-- [Post 3: Research Paper](/post3.html)
+- [A Short Story about Crustaceans](_posts/2018-08-12-the-adventure-of-the-speckled-band.md)
