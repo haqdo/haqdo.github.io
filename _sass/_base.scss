@@ -137,11 +137,11 @@ figcaption {
   }
 }
 
-// .site-credits {
-//   margin: 0 auto 2em;
-//   padding: 0 2em;
-//   text-align: center;
-// }
+.site-credits {
+  margin: 0 auto 2em;
+  padding: 0 2em;
+  text-align: center;
+}
 
 .skip-navigation {
   background: $brand-color;
@@ -209,7 +209,7 @@ figcaption {
 /* Style for the third button */
 #writingbutton {
   top: 260px; /* Adjust this value to place it below the word "Quyên" */
-  left: 10%;
+  left: 15%;
   width: 150px; /* Adjust the size as needed */
   transform: translateX(-50%); /* Center the second button relative to the page */
 }
