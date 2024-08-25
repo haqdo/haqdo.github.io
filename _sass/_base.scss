@@ -216,7 +216,7 @@ figcaption {
   width: 200px; /* Adjust the image size */
   height: auto;
   position: absolute;
-  left: 10px; /* Position the image 120px to the right of the h1 */
-  top: 1000px; /* Vertically center the image relative to the h1 */
+  right: 10px; /* Position the image 120px to the right of the h1 */
+  top: 800px; /* Vertically center the image relative to the h1 */
   transform: translateY(-50%); /* Adjust for vertical centering */
 }
