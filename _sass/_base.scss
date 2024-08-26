@@ -166,8 +166,8 @@ figcaption {
 .site-description {
   text-align: left; /* Right align the text */
   font-size: inherit; /* Keep the default h3 font size */
-  margin-right: 550px; /* Optional: Add some space to the right if needed */
-  margin-left: 650px;
+  margin-right: 650px; /* Optional: Add some space to the right if needed */
+  margin-left: 550px;
   top: 350px;
 }
 
@@ -201,7 +201,7 @@ figcaption {
 /* Style for the second button */
 #aryanbutton {
   top: 300px; /* Adjust this value to place it below the word "Quyên" */
-  left: 30%;
+  left: 20%;
   width: 100px; /* Adjust the size as needed */
   transform: translateX(-50%); /* Center the second button relative to the page */
 }
