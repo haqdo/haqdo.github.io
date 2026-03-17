@@ -370,26 +370,14 @@
 
   let lastX = 0;
   let lastY = 0;
-  let facingRight = true;
 
   document.addEventListener('mousemove', function(e) {
     const dx = e.clientX - lastX;
     const dy = e.clientY - lastY;
 
-    // flip cursor
-    if (dx > 0 && !facingRight) {
-      facingRight = true;
-      cursor.style.transform = 'scaleX(1)';
-    } else if (dx < 0 && facingRight) {
-      facingRight = false;
-      cursor.style.transform = 'scaleX(-1)';
-    }
-
     // anchor trail to trailing edge
-    const anchorX = facingRight
-      ? e.clientX - cursorW          // moving right: anchor to left edge
-      : e.clientX + cursorW;         // moving left:  anchor to right edge
-    const anchorY = e.clientY - cursorH / 2;
+    const anchorX = e.clientX;
+    const anchorY = e.clientY;
 
     spawnTrail(anchorX, anchorY, dx, dy);
 
@@ -406,7 +394,7 @@
 
     // stretch the blob along the direction of travel
     const angle = Math.atan2(dy, dx) * (180 / Math.PI);
-    const length = Math.min(speed * 3, 60); // elongation — increase multiplier for longer streaks
+    const length = Math.min(speed * 5, 60); // elongation — increase multiplier for longer streaks
     const width  = Math.max(length * 0.25, 6); // how wide the streak is
 
     const trail = document.createElement('div');
