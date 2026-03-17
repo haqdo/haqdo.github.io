@@ -112,11 +112,17 @@
       margin-bottom: 1.5rem;
     }
 
-    #cv iframe {
+    .cv-pages {
+      display: flex;
+      flex-direction: column;
+      /* gap: 2rem; */
+      max-width: 750px;
+    }
+    
+    .cv-pages img {
       width: 100%;
-      height: 85vh;
-      border: 1px solid rgba(107,26,26,0.25);
       display: block;
+      /* border: 1px solid rgba(107,26,26,0.15); */
     }
 
     /* FUN */
@@ -125,7 +131,7 @@
       margin: 0 auto;
       padding: 4rem 3rem 6rem;
     }
-
+    
     #fun h2 {
       font-size: 1rem;
       font-weight: 600;
@@ -202,11 +208,15 @@
     </div>
   </section>
 
-  <!-- CV 
-  <section id="cv">
-    <h2>CV</h2>
-    <iframe src="Ha Do CV (13).pdf" title="Ha Do CV"></iframe>
-  </section> -->
+<section id="cv">
+  <h2>CV</h2>
+  <div class="cv-pages">
+    <img src="Ha Do CV (14)_page-0001.jpg" alt="CV page 1" />
+    <img src="Ha Do CV (14)_page-0002.jpg" alt="CV page 2" />
+    <img src="Ha Do CV (14)_page-0003.jpg" alt="CV page 3" />
+    <img src="Ha Do CV (14)_page-0004.jpg" alt="CV page 4" />
+  </div>
+</section>
 
   <!-- FUN
   <section id="fun">
