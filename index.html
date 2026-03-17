@@ -19,16 +19,14 @@
     /* NAV */
     nav {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       padding: 1.8rem 3rem;
       background: #15232b;
-      border-bottom: 1px solid rgba(107,26,26,0.2);
+      border-bottom: 1px solid rgba(240,242,245,0.1);
     }
 
     .nav-name {
@@ -40,10 +38,7 @@
       text-transform: uppercase;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-    }
+    .nav-links { display: flex; gap: 2rem; }
 
     .nav-links a {
       font-size: 0.85rem;
@@ -53,9 +48,7 @@
       text-decoration: none;
     }
 
-    .nav-links a:hover {
-      text-decoration: underline;
-    }
+    .nav-links a:hover { text-decoration: underline; }
 
     /* HOME */
     #home {
@@ -66,8 +59,7 @@
 
     .home-photo {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 0; right: 0;
       height: 100%;
       width: auto;
       display: block;
@@ -97,92 +89,145 @@
       letter-spacing: 0.01em;
     }
 
-    /* CV */
-    #cv {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 6rem 3rem 4rem;
+    /* LINKS / ICONS */
+    #links {
+      position: relative;
+      min-height: 100vh;
+      padding: 8rem 3rem 6rem;
     }
 
-    #cv h2 {
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-    }
-
-    .cv-pages {
-      display: flex;
-      flex-direction: column;
-      gap: -4rem;
-      max-width: 750px;
-    }
-    
-    .cv-pages img {
+    .icons-field {
+      position: relative;
       width: 100%;
-      display: block;
-      /* border: 1px solid rgba(107,26,26,0.15); */
+      min-height: 80vh;
     }
 
-    /* FUN */
-    #fun {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 4rem 3rem 6rem;
-    }
-    
-    #fun h2 {
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 1.8rem;
-    }
-
-    .fun-list {
-      list-style: none;
+    .icon-item {
+      position: absolute;
       display: flex;
       flex-direction: column;
-      gap: 1.6rem;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: #f0f2f5;
+      cursor: pointer;
+      transition: opacity 0.2s;
     }
 
-    .fun-list li h3 {
-      font-size: 0.9rem;
-      font-weight: 600;
+    .icon-item:hover { opacity: 0.5; }
+
+    .icon-item img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border: 1px solid rgba(240,242,245,0.2);
+    }
+
+    .icon-item span {
+      font-size: 0.7rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      margin-bottom: 0.3rem;
+      text-align: center;
     }
 
-    .fun-list li p {
+    /* Icon positions — spaced out */
+    .icon-cv      { top: 5%;  left: 8%; }
+    .icon-email   { top: 8%;  left: 40%; }
+    .icon-spotify { top: 5%;  left: 70%; }
+    .icon-extra1  { top: 42%; left: 15%; }
+    .icon-extra2  { top: 38%; left: 52%; }
+    .icon-extra3  { top: 45%; left: 78%; }
+    .icon-extra4  { top: 72%; left: 28%; }
+    .icon-extra5  { top: 68%; left: 62%; }
+
+    /* CV MODAL */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 200;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-box {
+      background: #15232b;
+      width: 90vw;
+      max-width: 860px;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(240,242,245,0.1);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid rgba(240,242,245,0.1);
+    }
+
+    .modal-header span {
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #f0f2f5;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-family: inherit;
       font-size: 1rem;
-      line-height: 1.8;
-      font-weight: 300;
+      color: #f0f2f5;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
+    .modal-close:hover { opacity: 0.5; }
+
+    .modal-box iframe {
+      flex: 1;
+      width: 100%;
+      border: none;
+    }
+
+    /* FOOTER */
     footer {
       text-align: center;
       padding: 2rem;
-      border-top: 1px solid rgba(107,26,26,0.2);
+      border-top: 1px solid rgba(240,242,245,0.1);
       font-size: 0.8rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: rgba(107,26,26,0.5);
+      color: rgba(240,242,245,0.35);
     }
 
     footer a {
-      color: #6b1a1a;
+      color: #f0f2f5;
       text-decoration: none;
     }
 
     footer a:hover { text-decoration: underline; }
 
     @media (max-width: 700px) {
-      .home-photo { width: 100%; opacity: 0.35; }
+      .home-photo { width: 100%; opacity: 0.25; }
       .home-text { max-width: 90%; bottom: 8%; }
       nav { padding: 1.2rem 1.5rem; }
-      #cv, #fun { padding: 5rem 1.5rem 3rem; }
+      .icons-field { min-height: 120vh; }
+      .icon-cv      { top: 4%;  left: 5%; }
+      .icon-email   { top: 4%;  left: 45%; }
+      .icon-spotify { top: 18%; left: 5%; }
+      .icon-extra1  { top: 18%; left: 45%; }
+      .icon-extra2  { top: 32%; left: 5%; }
+      .icon-extra3  { top: 32%; left: 45%; }
+      .icon-extra4  { top: 46%; left: 5%; }
+      .icon-extra5  { top: 46%; left: 45%; }
     }
   </style>
 </head>
@@ -192,8 +237,7 @@
     <a href="#home" class="nav-name">Ha Do</a>
     <div class="nav-links">
       <a href="#home">Home</a>
-      <a href="#cv">CV</a>
-      <a href="#fun">Fun</a>
+      <a href="#links">Links</a>
     </div>
   </nav>
 
@@ -202,44 +246,98 @@
     <img class="home-photo" src="your-photo.jpg" alt="Ha Do" />
     <div class="home-text">
       <h1>Ha Do</h1>
-      <p>I am an undergraduate astrophysics researcher at the University of Chicago. I focus primarily on stellar and galactic archaeology, 
+      <p>I am an undergraduate astrophysics researcher at the University of Chicago. I focus primarily on stellar and galactic archaeology,
       tracing the history of our local universe by studying very old objects such as dwarf galaxies, stellar streams, and very metal-poor stars.
       Alongside my work in science, I think a lot about critical theory from an arts and humanities perspective.</p>
     </div>
   </section>
 
-<section id="cv">
-  <h2>CV</h2>
-  <div class="cv-pages">
-    <img src="Ha Do CV (14)_page-0001.jpg" alt="CV page 1" />
-    <img src="Ha Do CV (14)_page-0002.jpg" alt="CV page 2" />
-    <img src="Ha Do CV (14)_page-0003.jpg" alt="CV page 3" />
-    <img src="Ha Do CV (14)_page-0004.jpg" alt="CV page 4" />
-  </div>
-</section>
+  <!-- LINKS / ICONS -->
+  <section id="links">
+    <div class="icons-field">
 
-  <!-- FUN
-  <section id="fun">
-    <h2>Fun</h2>
-    <ul class="fun-list">
-      <li>
-        <h3>Transit</h3>
-        <p>Member of UChicago Transit Explorers — I ride, map, and advocate for public transport systems across Chicago and beyond.</p>
-      </li>
-      <li>
-        <h3>Film Photography</h3>
-        <p>Analog grain and imperfect light. Something about it feels closer to how memory works — like old glass plates from Yerkes Observatory.</p>
-      </li>
-      <li>
-        <h3>Food &amp; Community</h3>
-        <p>As dorm co-president I organised restaurant outings, food bank volunteering, and raised over $2,000 for house events. Good food is a serious matter.</p>
-      </li>
-      <li>
-        <h3>Facilitation</h3>
-        <p>Through UChicago's Center for Identity + Inclusion, I facilitate fortnightly panels on contemporary social issues. Conversation is a technology too.</p>
-      </li>
-    </ul>
-  </section>  -->
+      <!-- CV — opens modal -->
+      <a class="icon-item icon-cv" href="#" onclick="openCV(event)">
+        <img src="icon-cv.jpg" alt="CV" />
+        <span>CV</span>
+      </a>
+
+      <!-- Email -->
+      <a class="icon-item icon-email" href="mailto:hado@uchicago.edu">
+        <img src="icon-email.jpg" alt="Email" />
+        <span>Email</span>
+      </a>
+
+      <!-- Spotify — replace href with your playlist URL -->
+      <a class="icon-item icon-spotify" href="https://open.spotify.com" target="_blank">
+        <img src="icon-spotify.jpg" alt="Spotify" />
+        <span>Spotify</span>
+      </a>
+
+      <!-- Placeholders — swap src, href, and label when ready -->
+      <a class="icon-item icon-extra1" href="#">
+        <img src="icon-1.jpg" alt="Link 1" />
+        <span>—</span>
+      </a>
+
+      <a class="icon-item icon-extra2" href="#">
+        <img src="icon-2.jpg" alt="Link 2" />
+        <span>—</span>
+      </a>
+
+      <a class="icon-item icon-extra3" href="#">
+        <img src="icon-3.jpg" alt="Link 3" />
+        <span>—</span>
+      </a>
+
+      <a class="icon-item icon-extra4" href="#">
+        <img src="icon-4.jpg" alt="Link 4" />
+        <span>—</span>
+      </a>
+
+      <a class="icon-item icon-extra5" href="#">
+        <img src="icon-5.jpg" alt="Link 5" />
+        <span>—</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CV MODAL -->
+  <div class="modal-overlay" id="cvModal" onclick="closeOnOverlay(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span>CV</span>
+        <button class="modal-close" onclick="closeCV()">✕ close</button>
+      </div>
+      <iframe src="Ha Do CV (14).pdf" title="Ha Do CV"></iframe>
+    </div>
+  </div>
 
   <footer>
-    Ha Do &middot; <a href="/cdn-cgi/l/email-protection#402821242f00352328292321272f6e252435"><span class
+    Ha Do &middot; <a href="mailto:hado@uchicago.edu">hado@uchicago.edu</a>
+  </footer>
+
+  <script>
+    function openCV(e) {
+      e.preventDefault();
+      document.getElementById('cvModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCV() {
+      document.getElementById('cvModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeOnOverlay(e) {
+      if (e.target === document.getElementById('cvModal')) closeCV();
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeCV();
+    });
+  </script>
+
+</body>
+</html>
