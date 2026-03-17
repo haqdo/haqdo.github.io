@@ -22,15 +22,15 @@
     }
     
     .trail {
-    position: fixed;
-    pointer-events: none;
-    z-index: 9998;
-    width: 40px;
-    height: 40px;
-    transform-origin: center center;
-    transition: opacity 0.4s ease;
-    opacity: 0;
-  }
+      position: fixed;
+      pointer-events: none;
+      z-index: 9998;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 70%);
+      transform: translate(-50%, -50%);
+      transition: opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+      opacity: 0;
+    }
 
     body {
       font-family: 'Inconsolata', monospace;
@@ -389,26 +389,28 @@
     const now = Date.now();
     if (now - lastTrailTime > trailDelay) {
       lastTrailTime = now;
-      spawnTrail(e.clientX, e.clientY, facingRight);
+      spawnTrail(e.clientX, e.clientY);
     }
   });
 
-  function spawnTrail(x, y, flipped) {
-    const trail = document.createElement('img');
-    trail.src = 'shooting-star.png';
+  function spawnTrail(x, y) {
+    const size = Math.random() * 10 + 8; // random size between 8–18px — adjust range for bigger/smaller blobs
+    const trail = document.createElement('div');
     trail.classList.add('trail');
-    trail.style.left = (x - 20) + 'px';
-    trail.style.top  = (y - 20) + 'px';
-    trail.style.transform = flipped ? 'scaleX(1)' : 'scaleX(-1)';
+    trail.style.left = x + 'px';
+    trail.style.top  = y + 'px';
+    trail.style.width  = size + 'px';
+    trail.style.height = size + 'px';
     document.body.appendChild(trail);
-
-    // fade in immediately, then fade out
+  
     requestAnimationFrame(() => {
-      trail.style.opacity = '0.5';   // peak opacity of trail — adjust 0 to 1
+      trail.style.opacity = '1';
       setTimeout(() => {
         trail.style.opacity = '0';
-        setTimeout(() => trail.remove(), 400); // remove after fade completes
-      }, 80);                        // how long before it starts fading
+        trail.style.width  = '2px';   // shrinks as it fades — remove these two lines for a simple fade with no taper
+        trail.style.height = '2px';
+        setTimeout(() => trail.remove(), 500);
+      }, 60);
     });
   }
 </script>
