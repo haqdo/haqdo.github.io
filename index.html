@@ -395,7 +395,7 @@
     // stretch the blob along the direction of travel
     const angle = Math.atan2(dy, dx) * (180 / Math.PI);
     const length = Math.min(speed * 7, 60); // elongation — increase multiplier for longer streaks
-    const width  = Math.max(length * 0.75, 6); // how wide the streak is
+    const width  = Math.max(length * 0.5, 6); // how wide the streak is
 
     const trail = document.createElement('div');
     trail.classList.add('trail');
