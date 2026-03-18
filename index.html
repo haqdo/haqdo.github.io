@@ -15,8 +15,8 @@
       position: fixed;
       pointer-events: none;
       z-index: 9999;
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
       transform-origin: center center;
       transition: transform 0.1s ease;
     }
@@ -365,8 +365,8 @@
 
 <script>
   const cursor = document.getElementById('cursor');
-  const cursorW = 40; // match your cursor image width
-  const cursorH = 40; // match your cursor image height
+  const cursorW = 30; // match your cursor image width
+  const cursorH = 30; // match your cursor image height
 
   let lastX = 0;
   let lastY = 0;
@@ -394,8 +394,8 @@
 
     // stretch the blob along the direction of travel
     const angle = Math.atan2(dy, dx) * (180 / Math.PI);
-    const length = Math.min(speed * 5, 60); // elongation — increase multiplier for longer streaks
-    const width  = Math.max(length * 0.25, 6); // how wide the streak is
+    const length = Math.min(speed * 7, 60); // elongation — increase multiplier for longer streaks
+    const width  = Math.max(length * 0.75, 6); // how wide the streak is
 
     const trail = document.createElement('div');
     trail.classList.add('trail');
