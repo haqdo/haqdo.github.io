@@ -7,7 +7,138 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    /* paste your full CSS here */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inconsolata', monospace;
+      background: #15232b;
+      color: #f0f2f5;
+      min-height: 100vh;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 1.8rem 3rem;
+      background: #15232b;
+      border-bottom: 1px solid rgba(240,242,245,0.1);
+    }
+
+    .nav-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: #f0f2f5;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links { display: flex; gap: 2rem; }
+
+    .nav-links a {
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f0f2f5;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover { text-decoration: underline; }
+
+    /* MAIN */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 8rem 3rem 6rem;
+    }
+
+    h1 {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 3.5rem;
+      opacity: 0.6;
+    }
+
+    .pub-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2.8rem;
+    }
+
+    .pub-entry {
+      border-left: 1px solid rgba(240,242,245,0.15);
+      padding-left: 1.5rem;
+    }
+
+    .pub-meta {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.45;
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-title {
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.45;
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-title a {
+      color: #f0f2f5;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(240,242,245,0.25);
+      transition: border-color 0.2s;
+    }
+
+    .pub-title a:hover {
+      border-color: #f0f2f5;
+    }
+
+    .pub-authors {
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.7;
+      opacity: 0.6;
+    }
+
+    .pub-authors strong {
+      color: #f0f2f5;
+      opacity: 1;
+      font-weight: 600;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(240,242,245,0.1);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(240,242,245,0.35);
+    }
+
+    footer a {
+      color: #f0f2f5;
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      nav { padding: 1.2rem 1.5rem; }
+      main { padding: 6rem 1.5rem 4rem; }
+    }
   </style>
 </head>
 <body>
@@ -21,10 +152,43 @@
     </div>
   </nav>
 
-  <section style="max-width: 700px; margin: 0 auto; padding: 8rem 3rem;">
-    <h2>Publications</h2>
-    <!-- your content here -->
-  </section>
+  <main>
+    <h1>Publications</h1>
+
+    <ul class="pub-list">
+
+      <li class="pub-entry">
+        <p class="pub-meta">Nature Astronomy · 2026</p>
+        <p class="pub-title">
+          <a href="https://www.nature.com/articles/s41550-026-02816-7" target="_blank">
+            A Nearly Pristine Star from the Large Magellanic Cloud
+          </a>
+        </p>
+        <p class="pub-authors">
+          Alexander P. Ji, Vedant Chandra, Selenna Mejias-Torres, Zhongyuan Zhang,
+          Philipp Eitner, Kevin C. Schlaufman, Hillary D. Andales,
+          <strong>Ha Do</strong>, Natalie M. Orrantia, Rithika Tudmilla,
+          Pierre N. Thibodeaux, Keivan G. Stassun, Madeline Howell, Jamie Tayar,
+          Maria Bergemann, Andrew R. Casey, Jennifer A. Johnson, William Cerny,
+          Keith Hawkins, Guilherme Limberg, Guy S. Stringfellow, Riley Thai
+        </p>
+      </li>
+
+      <li class="pub-entry">
+        <p class="pub-meta">Publications of the Astronomical Society of the Pacific · 2025</p>
+        <p class="pub-title">
+          <a href="https://iopscience.iop.org/article/10.1088/1538-3873/adaa1a" target="_blank">
+            Digitization and Evaluation of Spectrograms from ε Aurigae's 1928–1930 Eclipse
+          </a>
+        </p>
+        <p class="pub-authors">
+          Isaiah Escapa, Daniel Babnigg, <strong>Ha Do</strong>,
+          Rachel Kovach-Fuentes, Richard Kron, Nicole Millan Ortiz
+        </p>
+      </li>
+
+    </ul>
+  </main>
 
   <footer>
     Ha Do &middot; <a href="mailto:hado@uchicago.edu">hado@uchicago.edu</a>
